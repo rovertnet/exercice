@@ -18,12 +18,17 @@
       // for (let letter in greeting) {
       //   console.log(letter);
       // }
-      const nombre = prompt("Entrez un nombre")
-
-      for (let numner = 1; numner > 1 && numner < 10; Number++) {
-        
-    
+      let nombre = prompt("Entrez un nombre")
+      
+      if (nombre > 10 || nombre < 0) {
+        console.log("une erreur est survenue");
+      }else{
+        while (nombre >= 0) {
+          console.log(nombre);
+          nombre--
+        }
       }
+      
 
     </script>
   </head>
