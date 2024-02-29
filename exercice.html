@@ -6,17 +6,13 @@
     <title>javascript</title>
 
     <script>
-      
-      let chiffre = 3
-      let val = prompt("Entrez le vrai chiffre")
-      if (val === chiffre) {
-        console.log("C'est faux");
-      }else{
-        for (let index = 0; index < 10; index++) {
-          console.log(val);
+      function infos(age, pays) {
+        if ((age > 13 && pays === "FR") || (age > 18 && pays === "USA")) {
+          return true;
         }
+        return false;
       }
-      
+      console.log(infos(11, "FR"));
     </script>
   </head>
   <body></body>
