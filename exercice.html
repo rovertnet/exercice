@@ -6,14 +6,24 @@
     <title>javascript</title>
 
     <script>
-      const infos = function (age, pays) {
-        if ((age > 13 && pays === "FR") || (age > 18 && pays === "USA")) {
-          return true;
+      const isPair = function (a, fn) {
+        if (a % 2 === 0) {
+          fn(a);
+        } else {
+          console.log("Faux, ce nombre n'est pas premier");
         }
-        return false;
-      }
-      console.log(infos(11, "FR"));
+      };
+      isPair(2, function (n) {
+        console.log("Vrai, ce nombre est premier", n);
+      });
     </script>
   </head>
-  <body></body>
+  <body>
+    <p id="monId">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, amet
+      harum alias reiciendis, consequatur eveniet placeat facere obcaecati a eos
+      laborum molestiae provident impedit? Debitis cumque eaque impedit sint
+      velit.
+    </p>
+  </body>
 </html>
